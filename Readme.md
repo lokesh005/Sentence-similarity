@@ -7,8 +7,7 @@ approaches to modeling sentence level semantics, the STS shared task has been he
 annually since 2012, as part of the SemEval/SEM family of workshops. The selection of
 STS datasets include text from image captions, news headlines and user forums.
 
-We are
-extracting various feature that could help us further in prediction the similarity value.
+We are extracting various feature that could help us further in prediction the similarity value.
 We have tried to replicate the result as mentioned in the paper “UWB at SemEval-2016
 Task 1: Semantic Textual Similarity using Lexical, Syntactic, and Semantic Information”
 using unsupervised learning.
@@ -34,6 +33,8 @@ vocabulary |V| is created. Now we compute the similarity scores using cosine sim
 function.
 6. Paragraph2Vec: In this we used Doc2Vec of gensim package to find out the vector of the
 sentence given it is a TaggedDocument and further applied cosine similarity.
+
+
 The model was trained with several algorithm which include Linear regression, Gaussian process
 Classifier, SVM regression, XGBoost and MLP Classifier. After parameter tuning for each
 algorithm, it was observed that SVM surpasses all other algorithms (we took Pearson Correlation
